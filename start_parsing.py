@@ -63,6 +63,8 @@ def start_parsing(count_start, count_end):
                     write_file('count_start.txt', str(number) + ' - ' + str(count_start))
 
                 count_start -= 1
+            break
+            
         except Exception as e:
             write_file('errors.txt', str(number) + ' - ' + str(e))
             write_file('errors.txt', str(number) + ' - ' + '____________________________________')
