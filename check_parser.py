@@ -7,5 +7,8 @@ questions = db.mairudata
 
 print(len(list(questions.find())))
 
-q = list(questions.find())
-print(q[len(q) - 1])
+try:
+    q = list(questions.find())
+    print(q[len(q) - 1])
+except IndexError:
+    print("no data")
