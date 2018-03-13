@@ -1,3 +1,4 @@
+import os
 import re
 import requests
 import argparse
@@ -15,7 +16,7 @@ end = opt.end
 
 
 def write_file(filename, text):
-    f = open(filename, 'a')
+    f = open(os.getcwd() +'/' + filename, 'a')
     f.write(text + '\n')
     f.close()
 
