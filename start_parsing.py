@@ -16,7 +16,7 @@ end = opt.end
 
 
 def write_file(filename, text):
-    f = open(os.getcwd() +'/' + filename, 'a')
+    f = open(os.getcwd() + '/' + filename, 'a')
     f.write(text + '\n')
     f.close()
 
