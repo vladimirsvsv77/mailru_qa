@@ -1,8 +1,16 @@
 import os
+import argparse
 
-start_point = 101156037
-step_point = 2000000
-count_instance = 50
+
+parser = argparse.ArgumentParser(description='run_ins.py')
+parser.add_argument('-start', type=int)
+parser.add_argument('-step', type=int)
+parser.add_argument('-count', type=int)
+opt = parser.parse_args()
+
+start_point = opt.start
+step_point = opt.step
+count_instance = opt.count
 
 for i in range(count_instance):
     print(i)
